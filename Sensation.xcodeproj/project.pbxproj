@@ -9,21 +9,71 @@
 /* Begin PBXBuildFile section */
 		F030202927462F5300E5AED6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030202827462F5300E5AED6 /* AppDelegate.swift */; };
 		F030202B27462F5300E5AED6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030202A27462F5300E5AED6 /* SceneDelegate.swift */; };
-		F030202D27462F5300E5AED6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030202C27462F5300E5AED6 /* ViewController.swift */; };
+		F030202D27462F5300E5AED6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030202C27462F5300E5AED6 /* HomeViewController.swift */; };
 		F030203027462F5300E5AED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F030202E27462F5300E5AED6 /* Main.storyboard */; };
 		F030203227462F5500E5AED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F030203127462F5500E5AED6 /* Assets.xcassets */; };
 		F030203527462F5500E5AED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F030203327462F5500E5AED6 /* LaunchScreen.storyboard */; };
+		F030203D2746844400E5AED6 /* AccelerometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030203C2746844400E5AED6 /* AccelerometerViewController.swift */; };
+		F030204227485E3B00E5AED6 /* AccelerometerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030204127485E3B00E5AED6 /* AccelerometerManager.swift */; };
+		F03020472748F85400E5AED6 /* AccelerometerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03020452748F85400E5AED6 /* AccelerometerCell.swift */; };
+		F03020482748F85400E5AED6 /* AccelerometerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03020462748F85400E5AED6 /* AccelerometerCell.xib */; };
+		F095396D27663CFD00190377 /* AccelerometerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095396C27663CFD00190377 /* AccelerometerModel.swift */; };
+		F095396F27664B7A00190377 /* MagnetometerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095396E27664B7A00190377 /* MagnetometerManager.swift */; };
+		F095397227664D6700190377 /* MagnometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095397127664D6700190377 /* MagnometerViewController.swift */; };
+		F095397427664E2600190377 /* MagnetometerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095397327664E2600190377 /* MagnetometerModel.swift */; };
+		F095397827664FCB00190377 /* MagnetometerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095397627664FCB00190377 /* MagnetometerCell.swift */; };
+		F095397927664FCB00190377 /* MagnetometerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F095397727664FCB00190377 /* MagnetometerCell.xib */; };
+		F095397B27665D3200190377 /* GyroManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095397A27665D3200190377 /* GyroManager.swift */; };
+		F095397D27665E5900190377 /* GyroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095397C27665E5900190377 /* GyroModel.swift */; };
+		F095398027665F3800190377 /* GyroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095397F27665F3800190377 /* GyroViewController.swift */; };
+		F095398427665F6000190377 /* GyroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095398227665F6000190377 /* GyroCell.swift */; };
+		F095398527665F6000190377 /* GyroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F095398327665F6000190377 /* GyroCell.xib */; };
+		F0953987276663B000190377 /* DeviceMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0953986276663B000190377 /* DeviceMotionManager.swift */; };
+		F09539892766747000190377 /* DeviceMotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09539882766746F00190377 /* DeviceMotionModel.swift */; };
+		F095398D276674DA00190377 /* DeviceMotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095398B276674DA00190377 /* DeviceMotionCell.swift */; };
+		F095398E276674DA00190377 /* DeviceMotionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F095398C276674DA00190377 /* DeviceMotionCell.xib */; };
+		F09539912766750100190377 /* DeviceMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09539902766750100190377 /* DeviceMotionViewController.swift */; };
+		F095399327667F2300190377 /* GPSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095399227667F2300190377 /* GPSManager.swift */; };
+		F09539972766888000190377 /* GPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09539962766888000190377 /* GPSViewController.swift */; };
+		F095399B276688AF00190377 /* GPSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0953999276688AF00190377 /* GPSCell.swift */; };
+		F095399C276688AF00190377 /* GPSCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F095399A276688AF00190377 /* GPSCell.xib */; };
+		F095399E27668A0500190377 /* GPSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095399D27668A0500190377 /* GPSModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F030202527462F5300E5AED6 /* Sensation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sensation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F030202827462F5300E5AED6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F030202A27462F5300E5AED6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F030202C27462F5300E5AED6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F030202C27462F5300E5AED6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F030202F27462F5300E5AED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F030203127462F5500E5AED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F030203427462F5500E5AED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F030203627462F5500E5AED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F030203C2746844400E5AED6 /* AccelerometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerViewController.swift; sourceTree = "<group>"; };
+		F030204127485E3B00E5AED6 /* AccelerometerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerManager.swift; sourceTree = "<group>"; };
+		F03020452748F85400E5AED6 /* AccelerometerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerCell.swift; sourceTree = "<group>"; };
+		F03020462748F85400E5AED6 /* AccelerometerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccelerometerCell.xib; sourceTree = "<group>"; };
+		F095396C27663CFD00190377 /* AccelerometerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerModel.swift; sourceTree = "<group>"; };
+		F095396E27664B7A00190377 /* MagnetometerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerManager.swift; sourceTree = "<group>"; };
+		F095397127664D6700190377 /* MagnometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnometerViewController.swift; sourceTree = "<group>"; };
+		F095397327664E2600190377 /* MagnetometerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerModel.swift; sourceTree = "<group>"; };
+		F095397627664FCB00190377 /* MagnetometerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerCell.swift; sourceTree = "<group>"; };
+		F095397727664FCB00190377 /* MagnetometerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MagnetometerCell.xib; sourceTree = "<group>"; };
+		F095397A27665D3200190377 /* GyroManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroManager.swift; sourceTree = "<group>"; };
+		F095397C27665E5900190377 /* GyroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroModel.swift; sourceTree = "<group>"; };
+		F095397F27665F3800190377 /* GyroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroViewController.swift; sourceTree = "<group>"; };
+		F095398227665F6000190377 /* GyroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroCell.swift; sourceTree = "<group>"; };
+		F095398327665F6000190377 /* GyroCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GyroCell.xib; sourceTree = "<group>"; };
+		F0953986276663B000190377 /* DeviceMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotionManager.swift; sourceTree = "<group>"; };
+		F09539882766746F00190377 /* DeviceMotionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotionModel.swift; sourceTree = "<group>"; };
+		F095398B276674DA00190377 /* DeviceMotionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotionCell.swift; sourceTree = "<group>"; };
+		F095398C276674DA00190377 /* DeviceMotionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceMotionCell.xib; sourceTree = "<group>"; };
+		F09539902766750100190377 /* DeviceMotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotionViewController.swift; sourceTree = "<group>"; };
+		F095399227667F2300190377 /* GPSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSManager.swift; sourceTree = "<group>"; };
+		F09539962766888000190377 /* GPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSViewController.swift; sourceTree = "<group>"; };
+		F0953999276688AF00190377 /* GPSCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSCell.swift; sourceTree = "<group>"; };
+		F095399A276688AF00190377 /* GPSCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPSCell.xib; sourceTree = "<group>"; };
+		F095399D27668A0500190377 /* GPSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +106,152 @@
 		F030202727462F5300E5AED6 /* Sensation */ = {
 			isa = PBXGroup;
 			children = (
-				F030202827462F5300E5AED6 /* AppDelegate.swift */,
-				F030202A27462F5300E5AED6 /* SceneDelegate.swift */,
-				F030202C27462F5300E5AED6 /* ViewController.swift */,
-				F030202E27462F5300E5AED6 /* Main.storyboard */,
-				F030203127462F5500E5AED6 /* Assets.xcassets */,
-				F030203327462F5500E5AED6 /* LaunchScreen.storyboard */,
+				F095396B27663CE300190377 /* Models */,
+				F030204027485DC600E5AED6 /* Manager */,
+				F030203E27485D7300E5AED6 /* Screens */,
+				F030203F27485D9500E5AED6 /* Supporting Files */,
 				F030203627462F5500E5AED6 /* Info.plist */,
 			);
 			path = Sensation;
+			sourceTree = "<group>";
+		};
+		F030203E27485D7300E5AED6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F030202C27462F5300E5AED6 /* HomeViewController.swift */,
+				F09539952766886A00190377 /* Pedometer */,
+				F095398A276674B100190377 /* DeviceMotion */,
+				F095397E27665F0C00190377 /* Gyro */,
+				F03020432748F7FA00E5AED6 /* Accelerometer */,
+				F095397027664D1100190377 /* Magnetometer */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F030203F27485D9500E5AED6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F030202827462F5300E5AED6 /* AppDelegate.swift */,
+				F030202A27462F5300E5AED6 /* SceneDelegate.swift */,
+				F030202E27462F5300E5AED6 /* Main.storyboard */,
+				F030203127462F5500E5AED6 /* Assets.xcassets */,
+				F030203327462F5500E5AED6 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F030204027485DC600E5AED6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F030204127485E3B00E5AED6 /* AccelerometerManager.swift */,
+				F095396E27664B7A00190377 /* MagnetometerManager.swift */,
+				F095397A27665D3200190377 /* GyroManager.swift */,
+				F0953986276663B000190377 /* DeviceMotionManager.swift */,
+				F095399227667F2300190377 /* GPSManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F03020432748F7FA00E5AED6 /* Accelerometer */ = {
+			isa = PBXGroup;
+			children = (
+				F030203C2746844400E5AED6 /* AccelerometerViewController.swift */,
+				F03020442748F81A00E5AED6 /* Cell */,
+			);
+			path = Accelerometer;
+			sourceTree = "<group>";
+		};
+		F03020442748F81A00E5AED6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F03020452748F85400E5AED6 /* AccelerometerCell.swift */,
+				F03020462748F85400E5AED6 /* AccelerometerCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F095396B27663CE300190377 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F095396C27663CFD00190377 /* AccelerometerModel.swift */,
+				F095397327664E2600190377 /* MagnetometerModel.swift */,
+				F095397C27665E5900190377 /* GyroModel.swift */,
+				F09539882766746F00190377 /* DeviceMotionModel.swift */,
+				F095399D27668A0500190377 /* GPSModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F095397027664D1100190377 /* Magnetometer */ = {
+			isa = PBXGroup;
+			children = (
+				F095397127664D6700190377 /* MagnometerViewController.swift */,
+				F095397527664F9500190377 /* Cell */,
+			);
+			path = Magnetometer;
+			sourceTree = "<group>";
+		};
+		F095397527664F9500190377 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F095397627664FCB00190377 /* MagnetometerCell.swift */,
+				F095397727664FCB00190377 /* MagnetometerCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F095397E27665F0C00190377 /* Gyro */ = {
+			isa = PBXGroup;
+			children = (
+				F095397F27665F3800190377 /* GyroViewController.swift */,
+				F095398127665F3D00190377 /* Cell */,
+			);
+			path = Gyro;
+			sourceTree = "<group>";
+		};
+		F095398127665F3D00190377 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F095398227665F6000190377 /* GyroCell.swift */,
+				F095398327665F6000190377 /* GyroCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F095398A276674B100190377 /* DeviceMotion */ = {
+			isa = PBXGroup;
+			children = (
+				F09539902766750100190377 /* DeviceMotionViewController.swift */,
+				F095398F276674E400190377 /* Cell */,
+			);
+			path = DeviceMotion;
+			sourceTree = "<group>";
+		};
+		F095398F276674E400190377 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F095398B276674DA00190377 /* DeviceMotionCell.swift */,
+				F095398C276674DA00190377 /* DeviceMotionCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F09539952766886A00190377 /* Pedometer */ = {
+			isa = PBXGroup;
+			children = (
+				F09539962766888000190377 /* GPSViewController.swift */,
+				F09539982766888500190377 /* Cell */,
+			);
+			path = Pedometer;
+			sourceTree = "<group>";
+		};
+		F09539982766888500190377 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F0953999276688AF00190377 /* GPSCell.swift */,
+				F095399A276688AF00190377 /* GPSCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +313,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F030203527462F5500E5AED6 /* LaunchScreen.storyboard in Resources */,
+				F095398E276674DA00190377 /* DeviceMotionCell.xib in Resources */,
+				F095397927664FCB00190377 /* MagnetometerCell.xib in Resources */,
+				F095398527665F6000190377 /* GyroCell.xib in Resources */,
+				F03020482748F85400E5AED6 /* AccelerometerCell.xib in Resources */,
 				F030203227462F5500E5AED6 /* Assets.xcassets in Resources */,
 				F030203027462F5300E5AED6 /* Main.storyboard in Resources */,
+				F095399C276688AF00190377 /* GPSCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +330,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F030202D27462F5300E5AED6 /* ViewController.swift in Sources */,
+				F030202D27462F5300E5AED6 /* HomeViewController.swift in Sources */,
+				F095399327667F2300190377 /* GPSManager.swift in Sources */,
+				F095398D276674DA00190377 /* DeviceMotionCell.swift in Sources */,
+				F095399E27668A0500190377 /* GPSModel.swift in Sources */,
+				F09539972766888000190377 /* GPSViewController.swift in Sources */,
+				F0953987276663B000190377 /* DeviceMotionManager.swift in Sources */,
+				F095397D27665E5900190377 /* GyroModel.swift in Sources */,
+				F095397227664D6700190377 /* MagnometerViewController.swift in Sources */,
 				F030202927462F5300E5AED6 /* AppDelegate.swift in Sources */,
+				F09539912766750100190377 /* DeviceMotionViewController.swift in Sources */,
+				F030203D2746844400E5AED6 /* AccelerometerViewController.swift in Sources */,
+				F09539892766747000190377 /* DeviceMotionModel.swift in Sources */,
+				F095397B27665D3200190377 /* GyroManager.swift in Sources */,
 				F030202B27462F5300E5AED6 /* SceneDelegate.swift in Sources */,
+				F095398027665F3800190377 /* GyroViewController.swift in Sources */,
+				F095397427664E2600190377 /* MagnetometerModel.swift in Sources */,
+				F095399B276688AF00190377 /* GPSCell.swift in Sources */,
+				F095396D27663CFD00190377 /* AccelerometerModel.swift in Sources */,
+				F030204227485E3B00E5AED6 /* AccelerometerManager.swift in Sources */,
+				F03020472748F85400E5AED6 /* AccelerometerCell.swift in Sources */,
+				F095398427665F6000190377 /* GyroCell.swift in Sources */,
+				F095396F27664B7A00190377 /* MagnetometerManager.swift in Sources */,
+				F095397827664FCB00190377 /* MagnetometerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +518,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +546,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
